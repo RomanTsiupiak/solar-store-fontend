@@ -26,7 +26,7 @@ const ShoppingCartItem = ({ product }: ShoppingCartItemProps) => {
   };
 
   return (
-    <div className="flex flex-row gap-[8px] p-[16px] border-[1px] border-[#000000] rounded-[16px] mb-[8px]">
+    <div className="w-full flex flex-row gap-[8px] p-[16px] border-[1px] border-[#000000] rounded-[16px] mb-[8px]">
       <div className="w-[70px] h-[90px] flex-shrink-0">
         <img
           alt="solar product"
