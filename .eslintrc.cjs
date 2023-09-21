@@ -51,6 +51,9 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'off',
     'object-shorthand': 'error',
     'no-console': 'warn',
-    'import/default': 'off'
+    'import/default': 'off',
+    'import/extensions': 'off',
+    'import/no-unresolved': 'off',
+    'import/no-extraneous-dependencies': 'off'
   },
 };
