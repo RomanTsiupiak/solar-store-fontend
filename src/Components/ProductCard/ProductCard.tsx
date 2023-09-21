@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 
+import solar from '@/assets/solar.jpeg';
 import { ProductDTO } from '@/types/products.ts';
 import { addProduct } from '@/store/reducers/productsSlice.ts';
 
@@ -18,11 +19,7 @@ const ProductCard = ({ product, canAdd }: ProductCardProps) => {
   return (
     <div className="w-[300px] bg-[#FFFFFF] rounded-[16px] flex flex-col items-center py-[16px] px-[32px]">
       <div className="w-[150px] h-[200px]">
-        <img
-          alt="solar product"
-          src="https://content.rozetka.com.ua/goods/images/big/253259390.png"
-          className="w-full h-full object-cover"
-        />
+        <img alt="solar product" src={solar} className="w-full h-full object-cover" />
       </div>
       <p className="uppercase my-[8px] font-extrabold text-[#2C2E3D] text-[20px]">{product?.name}</p>
       <p className="uppercase my-[8px] font-semibold text-[#2C2E3D] text-[16px]">

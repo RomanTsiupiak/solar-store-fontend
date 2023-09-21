@@ -1,5 +1,6 @@
 import { useDispatch } from 'react-redux';
 
+import solar from '@/assets/solar.jpeg';
 import { SelectedProductDTO } from '@/types/products.ts';
 import MinusIcon from '@/Components/Icon/MinusIcon.tsx';
 import PlusIcon from '@/Components/Icon/PlusIcon.tsx';
@@ -28,11 +29,7 @@ const ShoppingCartItem = ({ product }: ShoppingCartItemProps) => {
   return (
     <div className="w-full flex flex-row gap-[8px] p-[16px] border-[1px] border-[#000000] rounded-[16px] mb-[8px]">
       <div className="w-[70px] h-[90px] flex-shrink-0">
-        <img
-          alt="solar product"
-          src="https://content.rozetka.com.ua/goods/images/big/253259390.png"
-          className="w-full h-full object-cover"
-        />
+        <img alt="solar product" src={solar} className="w-full h-full object-cover" />
       </div>
       <div className="w-full flex flex-col justify-between">
         <p>{product.name}</p>
